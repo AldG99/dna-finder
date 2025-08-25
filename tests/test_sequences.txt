@@ -1,0 +1,37 @@
+# DNA Finder - Casos de Prueba
+# Archivo con secuencias para testing
+
+# Casos válidos básicos
+ATCG
+ATGAAATAG
+AAAAAAAAAA
+ATCGATCGATCGATCG
+GCGCGC
+
+# Casos con nucleótidos ambiguos
+ATCGN
+ATCGNNN
+RTYKMSWBDHV
+
+# Casos edge
+# (secuencia vacía se maneja en el código)
+N
+ATCGX  # Esta debería fallar validación
+
+# Secuencias en minúsculas (deben convertirse)
+atcg
+atgaaatag
+
+# Secuencias con ORFs
+ATGAAAAAACCCGGGTTTTAG
+ATGAAACCCGGGATGTTTTAG
+ATGGGGAAACCCTTTTAG
+
+# Secuencias con sitios de restricción
+GAATTC
+GGATCC
+AAGCTT
+CTCGAG
+
+# Secuencias complejas
+ATGCGATCGTAGCAAGCTGAATTCGGATCCAAGCTTCTCGAGACGTACGTAC
