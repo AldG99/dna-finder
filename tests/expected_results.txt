@@ -1,0 +1,45 @@
+# DNA Finder - Resultados Esperados
+# Para validar la correcta implementación
+
+# Secuencia: ATCG
+# Complementaria: TAGC
+# GC%: 50.00%
+# Traducción: I (Isoleucina)
+# Peso molecular: ~1289.2 Da
+
+# Secuencia: ATGAAA
+# Complementaria: TACTTT
+# GC%: 33.33%
+# Traducción: MK (Metionina-Lisina)
+# Peso molecular: ~1946.6 Da
+
+# Secuencia: GCGCGC
+# Complementaria: CGCGCG
+# GC%: 100.00%
+# Traducción: AA (Alanina-Alanina)
+# Peso molecular: ~1883.2 Da
+
+# Secuencia: ATGAAATAG
+# Complementaria: TACTTTATC
+# GC%: 22.22%
+# Traducción: MK* (Metionina-Lisina-Stop)
+# Peso molecular: ~2965.0 Da
+# ORFs: 1 (desde posición 0)
+
+# Secuencia: GAATTC (EcoRI site)
+# Complementaria: CTTAAG
+# GC%: 33.33%
+# Sitio de restricción: EcoRI
+# Peso molecular: ~1835.2 Da
+
+# Secuencia: GGATCC (BamHI site)
+# Complementaria: CCTAGG
+# GC%: 66.67%
+# Sitio de restricción: BamHI
+# Peso molecular: ~1851.2 Da
+
+# Casos de Validación:
+# ATCGX -> INVÁLIDA (contiene X)
+# atcg -> VÁLIDA (convertida a ATCG)
+# "" -> VÁLIDA pero vacía
+# N -> VÁLIDA (nucleótido ambiguo)
